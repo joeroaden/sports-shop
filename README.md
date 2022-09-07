@@ -1,4 +1,4 @@
-![image](Component-Diagram.png)
+![image component diagram](Component-Diagram.png)
 
 # Getting Started with Create React App
 
