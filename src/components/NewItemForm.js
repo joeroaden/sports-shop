@@ -28,7 +28,7 @@ function NewItemForm(props) {
         <textarea
           name='description'
           placeholder='Describe your item.' />
-        <input type='text' pattern='[0-100]*'
+        <input type='text' pattern='[0-9]*'
           name='quantity'
           placeholder='Enter number of items in stock' />
         <button type='submit'>Add an Item!</button>
