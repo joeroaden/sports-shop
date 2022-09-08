@@ -15,9 +15,16 @@ class ItemControl extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
+    if (this.state.selectedItem != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedItem: null
+      });
+    } else {
+      this.setState(prevState => ({
+      formVisibleOnPage: !prevState.formVisibleOnPage,
     }));
+    }
   }
   handleAddingNewItemToList = (newItem) => {
     const newMainItemList = this.state.mainItemList.concat(newItem);
